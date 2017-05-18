@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>球落地</title>
+        
+        <!--C. 有一個球從 100 公尺處落下，每次落地都反彈至原高度的二分之一，-->
+        <!--請問它第五次落地後，會反彈到多高?-->
+        
+    </head>
+    
+    <body>
+        <div>C. 有一個球從 100 公尺處落下，每次落地都反彈至原高度的二分之一，請問它第五次落地後，會反彈到多高? <br></br></div>
+       
+        <div id="text"></div>
+        
+        <script>
+        
+            var a = 100;
+            var b;
+            var c;
+            
+            for(var i=1; i<6; i++){
+                b = Math.pow(2,i);
+                c = 100 / b;
+                text.innerHTML += "第" + i + "次反彈" + c + "公尺" +"<br></br>";
+            }
+          
+        </script>
+        
+    </body>
+    
+</html>
